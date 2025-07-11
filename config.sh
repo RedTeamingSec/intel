@@ -7,6 +7,13 @@ cd xf86-input-libinput-1.2.1
 make
 make install
 
+wget --no-check-certificate -c -i https://www.x.org/pub/individual/driver/xf86-input-synaptics-1.9.2.tar.xz
+tar -xf xf86-input-synaptics-1.9.2.tar.xz
+cd xf86-input-synaptics-1.9.2
+./configure $XORG_CONFIG &&
+make
+make install
+
 wget --no-check-certificate -c -i https://anduin.linuxfromscratch.org/BLFS/xf86-video-intel/xf86-video-intel-20210222.tar.xz
 tar -xf xf86-video-intel-20210222.tar.xz
 cd xf86-video-intel-20210222
