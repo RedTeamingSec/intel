@@ -1,6 +1,7 @@
 #!/bin/bash
 wget --no-check-certificate -c -i https://anduin.linuxfromscratch.org/BLFS/xf86-video-intel/xf86-video-intel-20210222.tar.xz
-tar -xf 
+tar -xf xf86-video-intel-20210222.tar.xz
+cd xf86-video-intel-20210222
 ./autogen.sh $XORG_CONFIG     \
             --enable-kms-only \
             --enable-uxa      \
